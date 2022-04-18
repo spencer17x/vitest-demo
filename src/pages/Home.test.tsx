@@ -4,14 +4,14 @@
 import React from 'react';
 import { describe, it, expect } from 'vitest';
 import { render } from '@testing-library/react';
-import { createMemoryHistory } from 'history';
+import { createBrowserHistory } from 'history';
 import { Router } from 'react-router-dom';
 
 import Home from './Home';
 
 describe('Home', () => {
   it('first render', () => {
-    const history = createMemoryHistory();
+    const history = createBrowserHistory();
     const component = render(
       <Router history={history}>
         <Home/>
