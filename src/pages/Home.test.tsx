@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 
 import Home from './Home';
 
-describe('MeetingEntrance', () => {
+describe('Home', () => {
   it('first render', () => {
     const component = render(<Home/>);
     expect(component).toMatchSnapshot();
